@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button device1, device2, device3,device4;
+    Button device1, device2, device3, device4, ajustes, ayuda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,28 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 startActivity(new Intent(MainActivity.this, Seleccion.class));
+
+            }
+        });
+
+        ajustes = (Button) findViewById(R.id.button14);
+
+        ajustes.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                startActivity(new Intent(MainActivity.this, Configuracion.class));
+
+            }
+        });
+
+        ayuda = (Button) findViewById(R.id.button19);
+
+        ayuda.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                startActivity(new Intent(MainActivity.this, Ayuda.class));
 
             }
         });

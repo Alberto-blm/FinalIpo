@@ -12,8 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".curar"></activity>
-        <activity android:name=".Seleccion"></activity>
+        <activity android:name=".Ayuda"></activity>
+        <activity android:name=".Comandos" />
+        <activity android:name=".KeyWord" />
+        <activity android:name=".Correcto" />
+        <activity android:name=".Configuracion" />
+        <activity android:name=".curar" />
+        <activity android:name=".Seleccion" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

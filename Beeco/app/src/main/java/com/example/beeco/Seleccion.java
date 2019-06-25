@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Seleccion extends AppCompatActivity {
 
-    Button curar;
+    Button curar, dormir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,17 @@ public class Seleccion extends AppCompatActivity {
             public void onClick(View v){
 
                 startActivity(new Intent(Seleccion.this, curar.class));
+
+            }
+        });
+
+        dormir = (Button) findViewById(R.id.button);
+
+        dormir.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                startActivity(new Intent(Seleccion.this, Correcto.class));
 
             }
         });

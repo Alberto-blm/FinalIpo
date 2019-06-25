@@ -6,4 +6,5 @@
     <string name="device_2">Device 2</string>
     <string name="device_3">Device 3</string>
     <string name="device_4">Device 4</string>
+    <string name="title_activity_configuracion">Configuracion</string>
 </resources>
